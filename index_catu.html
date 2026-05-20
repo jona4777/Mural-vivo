@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor 360° - Mercado</title>
+    <!-- Importamos la librería de A-Frame -->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+    <!-- a-scene inicializa el entorno 3D y los controles de cámara -->
+    <a-scene>
+        <!-- a-sky proyecta la imagen en una esfera gigante alrededor del usuario -->
+        <a-sky src="catu_360.jpg" rotation="0 -90 0"></a-sky>
+        
+        <!-- Definimos la cámara explícitamente para asegurar que los controles de rotación (look-controls) estén activos -->
+        <a-camera position="0 1.6 0" look-controls="enabled: true"></a-camera>
+    </a-scene>
+</body>
+</html>
